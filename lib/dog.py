@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 
 
 def create_table(Base, engine):
-    engine = create_engine('sqlite:///dogs.db')
+    engine = create_engine('sqlite:///lib/dogs.db')
     Base.metadata.create_all(engine)
     
 def save(session, dog):
